@@ -45,7 +45,7 @@ picard-tools CreateSequenceDictionary R=hg38.fa O=hg38.dict
 #B. convert the unique alignment file/ input bam file into picard-tool format
 picard-tools AddOrReplaceReadGroups I=rmdup_SRR14634773.bam O=picardoutput.bam RGLB=lib1 RGPL=illumina RGPU=unit1 RGSM=SRR14634773 SORT_ORDER=coordinate CREATE_INDEX=true VALIDATION_STRINGENCY=LENIENT
 
-#C. variation calling using GATK Haplotypecaller algorithm(germline variation) mutect2 algorithm for somatic variation
+#C. variation calling using GATK Haplotypecaller algorithm for germline variation 
 samtools faidx hg38.fa (#manual generation of index file for refrence genome)
 java -jar /mnt/d/DrOmicsClass/TOOLS/gatk-4.3.0.0/gatk-package-4.3.0.0-local.jar HaplotypeCaller -R hg38.fa -I picard_output.bam -O GTAK_variation_calling.vcf
 
