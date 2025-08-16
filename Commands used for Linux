@@ -53,7 +53,7 @@ java -jar /mnt/d/DrOmicsClass/TOOLS/gatk-4.3.0.0/gatk-package-4.3.0.0-local.jar 
 cat GTAK_variation_calling.vcf | java -jar /mnt/d/DrOmicsClass/TOOLS/snpEff/SnpSift.jar filter "(( QUAL>=30) & (DP>=10) & (MQ>=30))" > snpSift_output.vcf
 
 
-
+[FOR VARIATION CALLING: one can use either GATK or SAMTOOLS)
 
 1.(#VARIATION CALLING using SAMTOOLS(output: BCF))
 bcftools mpileup -f hg38.fa rmdup_SRR14634773.bam > bcftools_variation_output 
