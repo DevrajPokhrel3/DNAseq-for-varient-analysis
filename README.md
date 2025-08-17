@@ -1,6 +1,6 @@
 # DNAseq Variant Calling Pipeline (hg38)
 
-A comprehensive workflow for variant calling from raw FASTQ files using GATK (or SAMtools/bcftools) methodologies, aligned to the hg38 reference genome.
+A comprehensive workflow for variant calling from raw FASTQ files using GATK (or SAMtools) methodologies, aligned to the hg38 reference genome.
 
 ## Workflow Overview
 
@@ -12,18 +12,18 @@ A comprehensive workflow for variant calling from raw FASTQ files using GATK (or
 4. Duplicate removal with Picard
 5. Variant calling with:
    - GATK HaplotypeCaller
-   - SAMtools/bcftools
+   - SAMtools
 6. Variant filtering and annotation
 
 ## Prerequisites
 
 ### Software Requirements
 - [bwa](http://bio-bwa.sourceforge.net/) (v0.7.17+)
-- [samtools](http://www.htslib.org/) (v1.15+)
 - [bcftools](http://www.htslib.org/) (v1.15+)
 - [FastQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/) (v0.11.9+)
 - [Picard](https://broadinstitute.github.io/picard/) (v2.27+)
 - [GATK](https://gatk.broadinstitute.org/) (v4.3.0.0+)
+- [samtools](http://www.htslib.org/) (v1.15+)
 - [SnpEff/SnpSift](https://pcingola.github.io/SnpEff/) (v5.1+)
 
 ### Reference Data
