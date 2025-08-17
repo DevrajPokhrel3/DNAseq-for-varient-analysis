@@ -1,7 +1,6 @@
 ##Downloading the ref genome
 
 wget -c https://hgdownload.soe.ucsc.edu/goldenPath/hg38/bigZips/hg38.fa.gz
-
 gunzip hg38.fa.gz
 
 #### Alignment contains two steps
@@ -9,13 +8,10 @@ gunzip hg38.fa.gz
 
 bwa index -a bwtsw hg38.fa
 
-
 ##Data downloading
 
 wget -c ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR146/073/SRR14634773/SRR14634773_1.fastq.gz
-
 wget -c ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR146/073/SRR14634773/SRR14634773_2.fastq.gz
-
 gunzip *.gz
 
 ##Quality Control using FastQC
@@ -23,8 +19,8 @@ gunzip *.gz
 fastqc *.fastq
 fastqc SRR15299556_1.fastq SRR15299556_2.fastq      
 
-##Trimming if need(fastp)
-NOT NEED HERE
+##Trimming
+NOT NEED HERE *if needed use (fastp)
 
 #aalignment contains two steps
 1. creation of index refrence genome
